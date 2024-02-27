@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+    font-family: "Quicksand", sans-serif;
+    margin: auto;
+    padding: auto;
+}
+
+/* Navbar */
+.navbar{
+  background-color: #f3f3f3;
+}
+
+.navbar a {
+    font-weight: 900;
+}
+.navbar .menu{
+    margin-top: -17px;
+}
+.menu a{
+    color: #272829;
+}
+.menu a:hover{
+    color: #40a2e3;
+    font-weight: 600;
+}
+
+/* Navbar icon ketika di layar desktop iconnya menghilang */
+.navbar .icon{
+    display: none;
+}
+
+/* style Location */
+.Location{
+    margin-top: 70px;
+}
+.Location img{
+    width: 100%;
+    border-radius: 20px;
+    box-shadow: 0 5px 10px rgba(53, 52, 52, 0.2);
+}
+
+.Location h2{
+    font-family: 'Roboto', sans-serif;
+    font-size: 40px;
+    font-weight: 700;
+    color: #272829;
+}
+.Location span{
+    color: #40a2e3;
+    font-size: 45px;
+    font-family: 'Roboto', sans-serif;
+}
+.Location .keterangan{
+    text-align: justify;
+    margin-top: 30px;
+    font-weight: 500;
+}
+
+.map {
+    margin-top: 50px;
+    margin-bottom: 20%;
+}
+.map .btn{
+    background-color: #40a2e3;
+    color: #f6f7f8;
+    font-weight: 700;
+    font-size: 15px;
+    border-radius: 6px;
+    box-shadow: 0 3px 5px rgba(0,0,0,0.5);
+}
+.map .btn:hover{
+    color: #40a2e3;
+    background-color: #f6f7f8;
+    border: 1.5px solid #40a2e3;
+    box-shadow: none;
+   
+}
+
+.peta iframe{
+    width: 70%;
+    height: 400px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+
+/* Layar Mobile */
+@media screen and (max-width: 500px) {
+    /* Navbar */
+    .navbar-brand {
+        margin-right: 100px;
+      }
+      .navbar .menu{
+        position: fixed;
+        bottom: 0; 
+        width: 100%;
+        background-color: #f3f3f3;
+        margin-left: -12px;
+        padding-left: 100px;
+        padding-right: 100px;
+      }
+      .navbar .icon{
+        display: block;
+        margin-bottom: -30px;
+        font-size: 20px;
+      }
+
+      /* Loacation jika di tampilan Mobile */
+      .Location img{
+        border-radius: 10px;
+        margin-top: -20px;
+      }
+
+      .Location h2 {
+        font-size: 30px;
+        text-align: center;
+        margin-top: 30px;
+      }
+      .Location span{
+        font-size: 35px;
+      }
+      .Location .keterangan{
+        margin-top: -1px;
+      }
+
+      /* peta */
+      .peta iframe{
+        width: 90%;
+        height: 250px;
+        margin-top: 20px;
+        box-shadow: 0 3px 5px rgba(0,0,0,0.3);
+      }
+  
+}

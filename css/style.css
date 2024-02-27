@@ -1,0 +1,73 @@
+/* body {
+    background: linear-gradient(to right, #D988B9, #BEADFA, #B0578D);
+} */
+
+
+
+.card-produk:hover{
+cursor: pointer;
+box-shadow: 5px 5px 10px rgb(69, 69, 69);
+}
+
+.developer {
+  font-size: 18px;
+  cursor: pointer;
+  color: #ffff;
+}
+
+.developer:hover {
+  color: #5C4B99;
+  transition: all ease-in .3s;
+}
+
+.respon {
+  margin-top: -30px;
+}
+
+.icon {
+  display: none;
+}
+
+.fuck {
+  position: sticky;
+  top: 0;
+  z-index: 3;
+}
+
+
+@media screen and (max-width: 500px){
+  /* tombol navbar  */
+  .respon {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background: #ffff;
+    z-index: 1;
+    font-weight: 500;
+
+}
+
+.icon {
+    font-size: 20px;
+    display: block;
+    margin-bottom: -30px;
+
+}
+
+.nav-item {
+    margin-right: -5px;
+    margin-left: -5px;
+}
+
+footer {
+    position: relative;
+    margin-bottom: 20px;
+    bottom: 0;
+}
+
+.dev {
+    font-size: 10px;
+    color: red;
+}
+  
+  }

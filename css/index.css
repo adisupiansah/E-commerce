@@ -1,0 +1,496 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+/* format font web */
+* {
+  font-family: "Quicksand", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: bold;
+  font-style: normal;
+}
+
+/* Content belanja di dalam keranjang pada navbar */
+.cart-belanja {
+  margin-left: -29px;
+}
+
+.cart-belanja .card-text span{
+  font-weight: normal;
+}
+.cart-belanja h4 {
+  font-weight: 600;
+}
+
+.cart-belanja .card-text {
+  margin-top: -10px;
+}
+
+.shoping-cart img {
+  border-radius: 10px;
+  margin-left: 20px;
+}
+
+.card-text .size {
+  padding: 2px 5px;
+  font-size: 12px;
+}
+
+.checkout-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border-radius: 15px;
+
+}
+
+.checkout-button:hover {
+  background-color: #F5F5F5;
+  color: green;
+}
+
+/* quantity badge / angka banyak belanjaan pada keranjang di navbar */
+
+.navbar-toggler i{
+  font-size: 23px;
+}
+
+.navbar-toggler .quantity-badge{
+  background-color: #40a2e3;
+  padding: 2px 5px 2px 5px;
+  border-radius: 5px;
+  display: flex;
+  margin-top: -18px;
+  margin-left: 15px;
+  color: #f5f7f8;
+}
+
+/* menu bar / navbar */
+.navbar {
+  /* background-color: #40a2e3; */
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  transition: top 0.3s;
+  background-color: #f3f3f3;
+}
+
+.menu {
+  margin-top: -20px;
+  margin-right: 50px;
+}
+.menu a {
+  color: #272829;
+}
+.menu a:hover {
+  color: #40a2e3;
+  font-weight: bold;
+}
+.icon{
+  display: none;
+}
+
+/* tombol add to cart (section card produk) */
+.tambah-ke-keranjang {
+  background-color: #40a2e3;
+  color: #f5f7f8;
+  font-weight: 500;
+}
+.tambah-ke-keranjang:hover {
+  color: #40a2e3;
+  background-color: #f5f7f8;
+  font-weight: bold;
+  border: 1px solid #40a2e3;
+}
+
+/* card product */
+.product {
+  margin-top: 50px;
+  transition: transform 0.3s;
+}
+.product:hover {
+  transform: scale(1.05);
+}
+
+/* tombol keranjang belanja yang di atas pojok kanan pada Navbar*/
+.navbar-toggler i {
+  color: #272829;
+  font-weight: bold;
+}
+.navbar-toggler i:hover {
+  color: #40a2e3;
+  font-weight: bold;
+}
+
+/* jumlah angka belanja di keranjang */
+.navbar-toggler .quantity-badge {
+  color: #272829;
+  font-size: 12px;
+}
+
+/* section hero */
+.hero {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  background-image: url("section-hero.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  /* margin-top: -5vh; */
+  position: relative;
+  z-index: 1;
+}
+
+.hero::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    0deg,
+    rgba(255, 255, 255, 1) 3%,
+    rgba(255, 255, 255, 0) 40%
+  );
+}
+.hero::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%; /* Ubah persentase untuk mengatur tinggi area gelap */
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0.5) 4%,
+    rgba(0, 0, 0, 0) 90%
+  );
+  z-index: -1;
+}
+
+.content h1 {
+  color: #f5f7f8;
+  font-weight: bold;
+}
+.content span{
+  color: #40a2e3;
+  font-weight: bold;
+  font-size: 50px;
+}
+.content p {
+  color: #f5f7f8;
+}
+.content .btn {
+  background-color: #40a2e3;
+  color: #f5f7f8;
+  font-weight: 700;
+  cursor: pointer;
+  border-radius: 7px;
+}
+.content .btn:hover {
+  background-color: #f5f7f8;
+  color: #40a2e3;
+  font-weight: 700;
+  border: 1px solid #40a2e3;
+}
+
+/* services */
+.our-services {
+  margin-top: 130px;
+}
+.our-services .service {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  display: flex;
+}
+
+.card-service {
+  margin-top: 20px;
+  box-shadow: 0 7px 7px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+
+  position: relative;
+  display: flex;
+  transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+  z-index: 1;
+  overflow: hidden;
+}
+.card-service::before {
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 5px;
+  height: 100%;
+  background: linear-gradient(-45deg, #272829 0%, #40a2e3 100%);
+  z-index: -1;
+  transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+  border-radius: 20px;
+  border-bottom-right-radius: 20px;
+  border-top-right-radius: 20px;
+}
+.card-service .card-body:hover{
+  color: #f5f7f8;
+}
+.card-service:hover::before {
+  width: 100%;
+}
+
+.card-service .card-body i{
+color: #59CE72;
+}
+.card-service .card-body i span{
+  color: #272829;
+  font-weight: 500;
+}
+
+.card-service .card-body img {
+  width: 100%;
+  border-radius: 30px;
+}
+.card-service .card-body p {
+  text-align: justify;
+}
+.card-body .contact {
+  margin-top: 12px;
+  margin-bottom: 1px;
+}
+.service h2 {
+  font-weight: 700;
+}
+
+
+/* form Tetimony pelanggan start */
+.testimony {
+  margin-top: 180px;
+}
+
+.testimony .text-center{
+  font-weight: 900;
+  color: #272829;
+  margin-bottom: 30px;
+}
+.testimony .cst{
+  font-weight: 900;
+  color: #40a2e3;
+}
+.inputGroup {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 1em 0 1em 0;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.inputGroup input {
+  font-size: 100%;
+  padding: 0.8em;
+  outline: none;
+  border: none;
+  background-color: transparent;
+  border-radius: 15px;
+  width: 50%;
+  box-shadow: 0 3px 7px rgba(0, 0, 0, 0.2);
+  font-weight: normal;
+}
+
+.inputGroup label {
+  font-size: 100%;
+  position: absolute;
+  left: 24%;
+  padding: 0.8em;
+  margin-left: 13px;
+  pointer-events: none;
+  transition: all 0.3s ease;
+  color: rgb(100, 100, 100);
+}
+
+.inputGroup :is(input:focus, input:valid)~label {
+  transform: translateY(-50%) scale(.9);
+  margin: 0em;
+  margin-left: 1.3em;
+  padding: 5px;
+  margin-top: -20px;
+  background-color: #ffffff;
+  color: #40a2e3;
+}
+
+.inputGroup :is(input:focus, input:valid) {
+  border: 2px solid #40a2e3 ;
+  box-shadow: none;
+}
+
+/* testimmony style form komentar */
+.inputKomentar {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 1em 0 1em 0;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.inputKomentar textarea {
+  margin-top: 17px;
+  font-size: 100%;
+  padding: 0.8em;
+  outline: none;
+  border: none;
+  background-color: transparent;
+  border-radius: 15px;
+  width: 50%;
+  height: 190px;
+  box-shadow: 0 3px 7px rgba(0, 0, 0, 0.2);
+  font-weight: normal;
+}
+
+.inputKomentar label {
+  font-size: 100%;
+  position: absolute;
+  left: 24%;
+  padding: 0.8em;
+  margin-left: 13px;
+  margin-top: -125px;
+  pointer-events: none;
+  transition: all 0.3s ease;
+  color: rgb(100, 100, 100);
+}
+
+.inputKomentar :is(textarea:focus, textarea:valid)~label {
+  transform: translateY(-50%) scale(.9);
+  margin: 0em;
+  margin-left: 1.3em;
+  padding: 5px;
+  margin-top: -145px;
+  background-color: #ffffff;
+  color: #40a2e3;
+}
+
+.inputKomentar :is(textarea:focus, textarea:valid) {
+  border: 2px solid #40a2e3 ;
+  box-shadow: none;
+}
+
+/* testimony tombol kirim */
+.tombolKirim{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 24px;
+}
+.tombolKirim .btn {
+  background-color: #40a2e3;
+  color: #f5f7f8;
+  font-weight: bold;
+  border-radius: 5px;
+}
+.tombolKirim .btn:hover{
+  background-color: #f5f7f8;
+  color: #40a2e3;
+  border: 2px solid #40a2e3;
+  font-weight: bold;
+}
+/* form testimone pelanggan end */
+
+
+
+
+/* hasil Komentar */
+.commentResults {
+  margin-top: 70px;
+}
+
+
+@media screen and (max-width: 500px) {
+  /* menubar / navbar */
+  .menu {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background: #f5f7f8;
+    z-index: 1;
+    font-weight: 500;
+    margin-left: -12px;
+  }
+  .menu a {
+    color: #272829;
+  }
+  .menu a:hover {
+    color: #40a2e3;
+  }
+
+  /* icon navbar */
+  .icon {
+    font-size: 20px;
+    display: block;
+    margin-bottom: -30px;
+  }
+
+  /* card belanja ketika di layar hp menjadi 2 */
+  .product .card-title {
+    font-size: 15px;
+  }
+  .product .card-text {
+    font-size: 13px;
+  }
+  .product .tambah-ke-keranjang {
+    font-size: 10px;
+  }
+
+  /* form input name tampilan Mobile */
+  .inputGroup input {
+      width: 100%;
+  }
+  .inputGroup label{
+    text-align: start;
+    margin-left: -90px;
+  }
+  .inputGroup :is(input:focus, input:valid)~label{
+    margin-left: -80px;
+  }
+
+  /* Form input komentar tampilan Mobile */
+  .inputKomentar textarea{
+    width: 100%;
+  }
+  .inputKomentar label {
+    text-align: start;
+    margin-left: -90px;
+  }
+  .inputKomentar :is(textarea:focus, textarea:valid)~label{
+    margin-left: -80px;
+  }
+  .tombolKirim .btn {
+    font-size: 15px;
+    padding: 10px;
+  }
+
+
+  .cart-belanja {
+    margin-left: 0;
+}
+
+.shoping-cart img {
+    width: 25%;
+}
+
+.garis hr {
+    width: 10px;
+    margin-right: 50px;
+}
+
+.checkout-button {
+    display: flex;
+    margin-left: 50px;
+    margin-top: -20px;
+}
+
+}

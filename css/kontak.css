@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+    font-family: "Quicksand", sans-serif;
+    margin: auto;
+    padding: auto;
+}
+
+/* Navbar */
+.navbar{
+  background-color: #f3f3f3;
+}
+
+.navbar a {
+    font-weight: 900;
+}
+.navbar .menu{
+    margin-top: -17px;
+}
+.menu a{
+    color: #272829;
+}
+.menu a:hover{
+    color: #40a2e3;
+    font-weight: 600;
+}
+
+/* Navbar icon ketika di layar desktop iconnya menghilang */
+.navbar .icon{
+    display: none;
+}
+
+/* Form Contact input name */
+.contactMe{
+    margin-top: 50px;
+    margin-bottom: 100px;
+}
+.formInput{
+    padding: 10px;
+    border: 2px solid #ffffff;
+    border-radius: 10px;
+    font-size: 16px;
+    color: #1a1a1a;
+    outline: none;
+    box-shadow: 0 1px 5px 3px rgba(0, 0, 0, 0.1);
+  }
+  
+  .formInput:focus {
+    transition: ease-in;
+    transition-duration: 2ms;
+    border-color: #40a2e3;
+    box-shadow: none;
+  }
+
+  /* Form contact input number */
+  .formInputNumber{
+    padding: 10px;
+    border: 2px solid #ffffff;
+    border-radius: 10px;
+    font-size: 16px;
+    color: #1a1a1a;
+    outline: none;
+    box-shadow: 0 1px 5px 3px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+  }
+  
+  .formInputNumber:focus {
+    transition: ease-in;
+    transition-duration: 2ms;
+    border-color: #40a2e3;
+    box-shadow: none;
+  }
+
+  /* Form input Komentar */
+  .formInputKomentar{
+    padding: 10px;
+    border: 2px solid #ffffff;
+    border-radius: 10px;
+    font-size: 16px;
+    color: #1a1a1a;
+    outline: none;
+    box-shadow: 0 1px 5px 3px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+    height: 200px;
+  }
+  
+  .formInputKomentar:focus {
+    transition: ease-in;
+    transition-duration: 2ms;
+    border-color: #40a2e3;
+    box-shadow: none;
+  }
+/* Form Button */
+.contactMe .btn{
+    background-color: #40a2e3;
+    margin-top: 20px;
+    color: #f5f7f8;
+    font-family: "Roboto", sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+}
+.contactMe .btn:hover{
+    background-color: #f5f7f8;
+    color: #40a2e3;
+    border: 1.5px solid #40a2e3;
+    font-weight: 600;
+}
+
+  /* form contact -> Judul */
+  .contactMe h2{
+    font-family: "Roboto", sans-serif;
+    font-weight: bold;
+    margin-bottom: 50px;
+    font-size: 40px;
+    text-align: center;
+    color: #272829;
+  }
+  .contactMe span{
+    color: #40a2e3;
+    font-size: 45px;
+  }
+
+  /* layar mobile */
+  @media screen and (max-width: 500px) {
+    /* Navbar */
+    .navbar-brand {
+      margin-right: 100px;
+    }
+    .navbar .menu{
+      position: fixed;
+      bottom: 0; 
+      width: 100%;
+      background-color: #f5f7f8;
+      margin-left: -12px;
+      padding-left: 100px;
+      padding-right: 100px;
+    }
+    .navbar .icon{
+      display: block;
+      margin-bottom: -30px;
+      font-size: 20px;
+    }
+    
+  
+    /* Form contact */
+    .formInput{
+      width: 100%;
+    }
+    .formInputKomentar{
+      width: 100%;
+    }
+    .formInputNumber{
+      width: 100%;
+    }
+    .contactMe .btn{
+      font-size: 17px;
+    }
+
+    /* Form Judul */
+    .contactMe h2{
+      font-size: 30px;
+    }
+    .contactMe span{
+      font-size: 35px;
+    }
+    
+  }
